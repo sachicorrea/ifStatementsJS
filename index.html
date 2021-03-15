@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If statements Workout JS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <h2>If statements Workout in Javascript</h2>
+
+        <!-- 1st Activity -->
+        <h4>1st Activity</h4>
+        <p>Dado dos números n1 y n2 mostrar si son iguales, si n1 es mayor que n2 si n2 es mayor que n1.</p>
+
+        <form class="row g-3"> 
+            <div class="col-md-6">
+                <label for="firstNumb" class="form-label">1st Number:</label>
+                <input type="number" class="form-control" id="firstNumb">
+            </div>
+
+            <div class="col-md-6">
+                <label for="secondNumb" class="form-label">2nd Number</label>
+                <input type="number" class="form-control" id="secondNumb">
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn btn-outline-danger" onclick="numbers()">Submit</button>
+            </div>
+            
+        </form>
+        
+        <p id="demo1"></p>
+        <hr>
+
+        <!-- 2nd Activity -->
+
+        <p>Dado el monto de una compra calcular el descuento considerado:
+            <ul>
+                <li>Descuento es 20% si el monto es mayor a 20000 pesos.</li>
+                <li>Descuento es 10% si el monto es menor o igual a 10000 y mayor a 5000 pesos</li>
+                <li>Descuento es 0% si el monto es menor o igual a 5000</li>
+            </ul>
+        </p>
+
+        <button type="button" class="btn btn-primary" onclick="compra()">Intentar</button>
+        
+        <p id="demo2"></p>
+        <hr>
+
+
+        <!-- 3rd Activity -->
+        <p>En un almacén de zapatos se planea ofrecer a los clientes un descuento que dependerá del número de zapatos que compre. Si compra un par no hay descuento, Si se compran dos pares de zapatos, el par de mayor valor se paga completo y el par de menor valor queda a la mitad del precio. Si compra 3 pares, los dos pares de mayor valor se pagan completos y el tercero le sale gratis. Escribir un programa que solicite la cantidad de zapatos a comprar, el precio de cada par y el total a pagar por la compra.</p>
+
+        <button type="button" class="btn btn-primary" onclick="zapatos()">Intentar</button>
+        
+        <p id="demo3"></p>
+        <hr>
+
+        <!-- 4th Activity -->
+
+        <p>Escribir un programa que muestre informe si el número es par, múltiplo de 3 y/o múltiplo de 5.</p>
+
+        <button type="button" class="btn btn-primary" onclick="multiplo()">Intentar</button>
+        
+        <p id="demo4"></p>
+        <hr>
+
+        <!-- 5th Activity -->
+
+        <p>Escribir un programa que calcule el importe de una factura sabiendo que el IVA a aplicar es del 12% y que si el total de la factura es superior a 50.000 se debe realizar un descuento del 5%.</p>
+
+        <button type="button" class="btn btn-primary" onclick="bill()">Intentar</button>
+        
+        <p id="demo5"></p>
+        <hr>
+
+        <!-- 6th Activity -->
+
+        <p>Hacer un programa que lea el largo y ancho de una figura geométrica y determinar si es un rectángulo o un cuadrado.</p>
+
+        <button type="button" class="btn btn-primary" onclick="cuadrRect()">Intentar</button>
+        
+        <p id="demo6"></p>
+        <hr>
+        
+        <!-- 7th Activity -->
+
+        <p>En el decreto 1290 de 2009 se estableció un nuevo sistema de calificaciones en Colombia en el cual se tienen en cuenta los siguientes rangos.</p>
+
+        <table>
+            <tr>
+                <td>9.0 a 10.0</td>
+                <td>Desempeño Superior</td>
+            </tr>
+
+            <tr>
+                <td>8.0 a 8.9</td>
+                <td>Desempeño Alto</td>
+            </tr>
+            
+            <tr>
+                <td>6.0 a 7.9</td>
+                <td>Desempeño Básico</td>
+            </tr>
+
+            <tr>
+                <td>0.0 a 5.9</td>
+                <td>Desempeño Bajo</td>
+            </tr>
+        </table>
+
+        <p>Un colegio de la ciudad desea que usted desarrolle un software en el cual se aplique el nuevo sistema de evaluación.Este nuevo software será administrado por cada profesor de la siguiente manera. El programa solicitara el nombre del estudiante, también solicitara individualmente el valor de las notas de tres exámenes (Las notas de los exámenes están entre 0.0 y 10.0). El programa calculara el promedio y de acuerdo al rango del nuevo sistema de calificaciones mostrara el nombre del estudiante, el promedio y el nivel de desempeño en el cual se encuentra.</p>
+
+        <button type="button" class="btn btn-primary" onclick="calificaciones()">Intentar</button>
+        
+        <p id="demo7"></p>
+        <hr>
+
+        <!-- 8th Activity -->
+        <p>Una persona interesada en un empleo, realiza un test de capacitación. En dicho test  la empresa obtuvo la siguiente información. Cantidad total de preguntas que se le realizaron y la cantidad de preguntas que contestó correctamente. La empresa le ha solicitado desarrollar un programa que ingrese En nombre del candidato, la cantidad de preguntas del test y la cantidad de preguntas respondidas correctamente. El programa deberá mostrar el nombre del candidato, el porcentaje de preguntas acertadas y el nivel en el cual ha quedado. El procentaje de preguntas correctas se pude calcular de la siguiente forma.</p>
+        <br>
+
+        <p>% preguntas correctas = (preguntas correctas / total preguntas) * 100</p>
+        
+        <table>
+        <tr>
+                <td>Nivel</td>
+                <td>%</td>
+        </tr>
+
+        <tr>
+            <td>Nivel máximo</td>
+            <td>Porcentaje>=90%</td>
+        </tr>
+
+        <tr>
+                <td>Nivel medio:</td>
+                <td>Porcentaje>=75% y &lt;90%</td>
+            </tr>
+
+            <tr>
+                <td>Nivel regular</td>
+                <td>Porcentaje>=50% y &lt;75%</td>
+            </tr>
+
+            <tr>
+                <td>Fuera de nivel</td>
+                <td>Porcentaje &lt;50%</td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn btn-primary" onclick="test()">Intentar</button>
+        
+        <p id="demo8"></p>
+        <hr>
+
+        <!-- 9th Activity -->
+        <p>El fondo de administración de pensiones requiere clasificar a las personas que se jubilaran en el año 2009. El programa pedirá la edad y la antigüedad. Si la edad es mayor o igual a 60 años o la antigüedad es mayor o igual a 25 años se mostrara el mensaje “El empleado se jubilara este año”. Sino, se mostrara el mensaje “El empleado aún no tiene la antigüedad ni la edad para jubilarse”.</p>
+
+        <button type="button" class="btn btn-primary" onclick="jubilacion()">Intentar</button>
+        
+        <p id="demo9"></p>
+        <hr>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
